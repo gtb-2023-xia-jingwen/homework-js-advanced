@@ -6,9 +6,9 @@ function fetchData(url) {
 
 const URL = 'http://localhost:3000/api';
 fetchData(URL)
-  .then(result => {
+  .then((result) => {
     document.writeln(result.name);
   })
-  .catch(error => {
+  .catch((error) => {
     console.error(error);
   });

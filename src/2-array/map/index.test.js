@@ -1,4 +1,4 @@
-import mapToHTMLString from "./index";
+import mapToHTMLString from './index';
 
 test('水果映射为列表', () => {
   const collectionA = ['apple', 'banana', 'cherry'];

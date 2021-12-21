@@ -4,16 +4,16 @@ test('寻找90后', () => {
   const collection = [
     {
       name: 'Tom',
-      age: 28
+      age: 28,
     },
     {
       name: 'Lucky',
-      age: 18
+      age: 18,
     },
     {
       name: 'Jerry',
-      age: 1
-    }
+      age: 1,
+    },
   ];
 
   const result = find00OldPerson(collection);

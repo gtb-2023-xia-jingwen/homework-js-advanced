@@ -1,7 +1,7 @@
 describe('for this', () => {
   test('default behavior', () => {
     const obj = {
-      foo: function () {
+      foo() {
         return this;
       },
       bar: 1,
@@ -21,7 +21,7 @@ describe('for this', () => {
 
   test('bind this', () => {
     const obj = {
-      foo: function () {
+      foo() {
         return this;
       },
       bar: 1,

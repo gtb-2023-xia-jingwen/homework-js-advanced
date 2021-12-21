@@ -34,7 +34,7 @@ describe('for arrow function', () => {
 
     expect(generateObj(1, 'Jane')).toEqual({
       id: 1,
-      name: 'Jane'
+      name: 'Jane',
     });
   });
 
@@ -43,7 +43,7 @@ describe('for arrow function', () => {
     // TODO: 将下面的函数表达式改写为箭头函数
     let number = 1;
     const fun = function () {
-      number = number + 1;
+      number += 1;
     };
     // --end->
 
@@ -54,9 +54,7 @@ describe('for arrow function', () => {
   test('arrow function as a parameter', () => {
     // <--start
     // TODO: 将 map 里的函数改写为箭头函数
-    const result = [1, 2, 3].map(function (x) {
-      return x * x;
-    });
+    const result = [1, 2, 3].map((x) => x * x);
     // --end->
 
     expect(result).toEqual([1, 4, 9]);
