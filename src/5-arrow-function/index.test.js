@@ -54,7 +54,10 @@ describe('for arrow function', () => {
   test('arrow function as a parameter', () => {
     // <--start
     // TODO: 将 map 里的函数改写为箭头函数
-    const result = [1, 2, 3].map((x) => x * x);
+    // eslint-disable-next-line prefer-arrow-callback
+    const result = [1, 2, 3].map(function (x) {
+      return x * x;
+    });
     // --end->
 
     expect(result).toEqual([1, 4, 9]);
