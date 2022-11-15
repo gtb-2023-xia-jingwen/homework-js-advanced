@@ -1,9 +1,9 @@
 function chooseMultiplesOfThree(collection) {
-  // TODO: 在这里写实现代码
+  return collection.filter(v => v % 3 == 0);
 }
 
 function collectCarNumberCount(collection) {
-  // TODO: 在这里写实现代码
+  return collection.filter(v => v.indexOf('粤A') == 0).length;
 }
 
 export { chooseMultiplesOfThree, collectCarNumberCount };
