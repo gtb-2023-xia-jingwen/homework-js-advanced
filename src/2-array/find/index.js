@@ -1,3 +1,3 @@
 export default function find00OldPerson(collection) {
-  // TODO: 在这里写实现代码
+  return collection.find(({age}) => age > 22).name;
 }
