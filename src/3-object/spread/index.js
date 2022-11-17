@@ -1,3 +1,5 @@
 export default function addSerialNumber(source) {
-  // TODO: 在这里写实现代码
+  let res = {serialNumber: '12345', ...source};
+  res.type = 'B';
+  return res;
 }
