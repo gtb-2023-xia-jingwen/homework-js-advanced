@@ -11,9 +11,9 @@ describe('for destructuring', () => {
 
     // <--start
     // TODO: Please write down the correct value. You should write the final result directly.
-    const expectedName = null;
-    const expectedAge = null;
-    const expectedRest = null;
+    const expectedName = 'name';
+    const expectedAge = 28;
+    const expectedRest = {address: 'xxx', phone: 'xxx'};
     // --end->
 
     expect(name).toEqual(expectedName);
@@ -25,9 +25,9 @@ describe('for destructuring', () => {
     const [first, second, ...rest] = [10, 20, 30, 40, 50];
     // <--start
     // TODO: Please write down the correct value. You should write the final result directly.
-    const expectedObjFoo = null;
-    const expectedFoo2 = null;
-    const expectedFoo3 = null;
+    const expectedObjFoo = 10;
+    const expectedFoo2 = 20;
+    const expectedFoo3 = [30, 40, 50];
     // --end->
 
     expect(first).toEqual(expectedObjFoo);
