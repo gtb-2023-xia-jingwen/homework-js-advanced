@@ -2,9 +2,7 @@ describe('for arrow function', () => {
   test('arrow function with one parameter and return a value', () => {
     // <--start
     // TODO: 将下面的函数表达式改写为箭头函数
-    const fun = function (v) {
-      return v;
-    };
+    const fun = (v) => v;
     // --end->
 
     expect(fun(1)).toEqual(1);
@@ -13,9 +11,7 @@ describe('for arrow function', () => {
   test('arrow function with parameters and return a value', () => {
     // <--start
     // TODO: 将下面的函数表达式改写为箭头函数
-    const sum = function (a, b) {
-      return a + b;
-    };
+    const sum = (a, b) => a + b;
     // --end->
 
     expect(sum(1, 2)).toEqual(3);
@@ -24,12 +20,7 @@ describe('for arrow function', () => {
   test('arrow function with parameters and return object value', () => {
     // <--start
     // TODO: 将下面的函数表达式改写为箭头函数
-    const generateObj = function (id, name) {
-      return {
-        id,
-        name,
-      };
-    };
+    const generateObj = (id, name) => ({id, name});
     // --end->
 
     expect(generateObj(1, 'Jane')).toEqual({
@@ -42,9 +33,7 @@ describe('for arrow function', () => {
     // <--start
     // TODO: 将下面的函数表达式改写为箭头函数
     let number = 1;
-    const fun = function () {
-      number += 1;
-    };
+    const fun = () => number += 1;
     // --end->
 
     fun();
@@ -55,9 +44,7 @@ describe('for arrow function', () => {
     // <--start
     // TODO: 将 map 里的函数改写为箭头函数
     // eslint-disable-next-line prefer-arrow-callback
-    const result = [1, 2, 3].map(function (x) {
-      return x * x;
-    });
+    const result = [1, 2, 3].map(x => x * x);
     // --end->
 
     expect(result).toEqual([1, 4, 9]);
