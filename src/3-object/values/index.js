@@ -1,3 +1,7 @@
 export default function countTypesNumber(source) {
-  // TODO: 在这里写实现代码
+  let res = 0;
+  for(let [k, v] of Object.entries(source)) {
+    res += parseInt(v);
+  }
+  return res;
 }
