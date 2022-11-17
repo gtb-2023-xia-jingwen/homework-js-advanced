@@ -11,8 +11,8 @@ describe('for this', () => {
 
     // <--start
     // TODO: Please write down the correct value. You should write the final result directly.
-    const expectedObjFoo = null;
-    const expectedFoo2 = null;
+    const expectedObjFoo = obj;
+    const expectedFoo2 = undefined;
     // --end->
 
     expect(obj.foo()).toEqual(expectedObjFoo);
@@ -32,9 +32,9 @@ describe('for this', () => {
 
     // <--start
     // TODO: Please write down the correct value. You should write the final result directly.
-    const expectedObjFoo = null;
-    const expectedFoo2 = null;
-    const expectedFoo3 = null;
+    const expectedObjFoo = obj;
+    const expectedFoo2 = undefined;
+    const expectedFoo3 = obj;
     // --end->
 
     expect(obj.foo()).toEqual(expectedObjFoo);
