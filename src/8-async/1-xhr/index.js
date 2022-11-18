@@ -1,8 +1,17 @@
 function fetchData(url, successCallback, errorCallback) {
   const xhr = new XMLHttpRequest();
   // <-- start
-  // TODO: 通过XMLHttpRequest实现异步请求
-
+  xhr.open('GET', url);
+  xhr.responseType = 'json';
+  xhr.onload = function() {
+    if (this.status === 200) {
+      successCallback(JSON.stringify(this.response));
+    }else{
+        console.log("error");
+    }
+  };
+  xhr.onerror = errorCallback;
+  xhr.send();
   // end -->
 }
 
