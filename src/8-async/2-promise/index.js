@@ -1,6 +1,21 @@
 function fetchData(url) {
   // <-- start
-  // TODO: 通过Promise实现异步请求
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function(){
+      if (this.status === 200) {
+        resolve(JSON.stringify(xhr.response));
+      }else{
+        console.log("error");
+      }
+    };
+    xhr.error = function() {
+      reject(xhr.statusText);
+    };
+    xhr.send();
+  });
   // end -->
 }
 

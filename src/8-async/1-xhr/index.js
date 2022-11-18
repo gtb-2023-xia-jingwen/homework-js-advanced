@@ -3,6 +3,7 @@ function fetchData(url, successCallback, errorCallback) {
   // <-- start
   xhr.open('GET', url);
   xhr.responseType = 'json';
+  xhr.onload = successCallback;
   xhr.onload = function() {
     if (this.status === 200) {
       successCallback(JSON.stringify(this.response));
