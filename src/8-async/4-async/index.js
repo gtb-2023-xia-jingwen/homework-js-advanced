@@ -1,6 +1,12 @@
 async function fetchData(url) {
   // <-- start
-  // TODO: 通过await/async实现异步请求
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch(error) {
+    console.log(error);
+  }
   // end -->
 }
 
